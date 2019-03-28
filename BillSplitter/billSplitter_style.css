@@ -1,0 +1,260 @@
+html{
+	background-color: white;
+}
+
+body{
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: calc(100% - 10px);
+	min-height: calc(100% - (1em + 15px));
+	
+	padding: 5px;
+	color: white;
+	font-size: 15pt;
+	font-family: 'helvetica';
+	word-wrap: break-word;
+	
+	border-color: white;
+	
+	background-color: silver;
+	
+	z-index: 1;
+}
+@media (min-width: 1000px) {
+	body{
+		left: calc(50% - 500px);
+		width: 973px;
+	}
+}
+
+input{
+	font-size: inherit;
+	border: none;
+	font-family: inherit;
+}
+
+input.text{
+	box-sizing: border-box;
+	background-color:white;
+	color:gray;
+	width: 100%;
+	margin: 1px 0px 1px 0px;
+}
+
+input.button{
+	width: 100%;
+	background-color:silver;
+	color: white;
+}
+
+input.button:hover{
+	background-color:white;
+	color:gray;
+}
+
+#header{
+	display: inline-block;
+	
+	width: 100%;
+	
+	font-size: 75px;
+	text-align: center;
+	
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+#footer{
+	display: inline-block;
+	
+	position: inherit;
+	left: 0px;
+	bottom: calc(-1em - 5px);
+	width: 100%;
+	height: 1em + 10px;
+
+	text-align: center;
+	
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	
+	background-color: inherit;
+}
+
+#navigation{
+	display: inline-block;
+	
+	width: 100%;
+	
+	font-size: 30px;
+	
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+#centerBox{
+	position: relative;
+	left: calc(50% - 250px);
+	width: 500px; 
+	
+	margin: 1em 0em 1em 0em;
+	
+	text-align: center;
+	border-width:1px;
+	
+	border-style: solid;
+	border-width: 1px;
+}
+@media (max-width: 500px) {
+	#centerBox{
+		left: 0px;
+		width: calc(100% - 5px);
+	}
+}
+
+.navButton a{
+	display: inline-block;
+	float: left;
+	padding: 3px 10px 3px 10px;
+	text-decoration: none;
+	color:white;
+}
+
+.navButton a:hover{
+	background-color:white;
+	color:gray;
+}
+
+.navButton#right {
+	float: right;
+}
+
+.heading{
+	font-size: 1.5em;
+
+	padding: 0px 3px 0px 3px;
+	font-weight: bold;
+}
+
+.bigText{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.rowElement{
+	display: inline-block;
+	
+	width: calc(100% - 20px);
+	position: relative;
+	left: 10px;
+	
+	border-style: solid;
+	border-width: 0px 0px 0.5px 0px;
+}
+
+.dropDownElement{
+	display: inline-block;
+	
+	width: calc(100% - 60px);
+	position: relative;
+	left: 10px;
+	padding: 0px 20px 0px 20px;
+	
+	border-style: solid;
+	border-width: 0px 0px 0.5px 0px;
+}
+.titleBlock{
+	display: inline-block;
+	width: 25%;
+}
+.descriptionBlock{
+	float: left;
+	width: 50%;
+}
+
+.dateBlock{
+	float: left;
+	width: 25%;
+}
+
+.allButCloseBlock{
+	float: left;
+	width: calc(100% - 1em);
+}
+
+.tenPercentBlock{
+	float: left;
+	width: 10%;
+	padding: 1px;
+}
+
+.fifteenPercentBlock{
+	float: left;
+	width: 15%;
+	padding: 1px;
+}
+
+.twentyPercentBlock{
+	float: left;
+	width: 20%;
+}
+
+.characterButtonBlock{
+	float: right;
+	width: 1em;
+}
+.wordButtonBlock{
+	float: right;
+}
+
+#currentGroups{
+	padding: 0.25em 0em 1em 0em;
+}
+
+.modalContent{
+	position: fixed;
+	left: calc(50% - 250px);
+	top: 25%;
+	width: 500px;
+	background-color: silver;
+	border-style: solid;
+	border-width: 1px;
+}
+@media (max-width: 500px) {
+	.modalContent{
+		left: 5px;
+		width: calc(100% - 10px);
+	}
+}
+
+.modalBackground{
+	display: block;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modalTitle{
+	float: left;
+	width: calc(100% - 1em);
+}
+.modalClose{
+	float: right;
+	width: 1em;
+}
+.modalClose:hover{
+	cursor: pointer;
+	color: gray;
+}
+
+.centerAlign{
+	margin: 0.5em 0em 0em 0em;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
